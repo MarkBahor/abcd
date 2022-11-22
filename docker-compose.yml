@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: api_c
+    ports:
+      - "3000:3000"
+  mongodb:
+      container_name : mongo
+      image: "mongo:5.0.13"
+      ports:
+        - 27017:27017

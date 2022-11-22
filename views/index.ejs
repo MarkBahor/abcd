@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+
+    <title>mb714685</title>
+    <style>
+
+        body {
+          background-color: black;
+        }
+
+    	p, h1, h2, h3, a, ul{
+    	margin: 0
+    	padding: 0;
+
+    	text-decoration:none;
+    	color: teal;
+    	}
+    	.profile_list{
+    	    margin-left: 20px;
+    	}
+
+    	  #container{
+    	  display:flex;
+    	  }
+
+    </style>
+  </head>
+  <body>
+    
+  
+  </div>
+</nav>
+<div>
+<nav class="navbar navbar-expand-lg bg-light">
+
+  <div class="container-fluid">
+    <img src = "https://markbahorprofilebucket.s3.amazonaws.com/logos.jpg
+    " width = "50" height = "50">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	</nav>
+
+
+	<div id="profile_list">
+	<h2>All Profiles</h2>
+	<% if (profiles.length > 0){%>
+	<% profiles.forEach(profile => { %>
+	<div id="container">
+    <img src = <%= profile.image %>  width = "200" height = "200">
+    <div>
+	<h1><%= profile.name %></h1>
+	<p><%= profile.body %></p>
+    </div>
+    </div>
+	<% }) %>
+	<% }%>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+</html>
