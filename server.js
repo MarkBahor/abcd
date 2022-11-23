@@ -50,14 +50,13 @@ const connectDatabase = () => {mongoose.connect('mongodb://mongo:27017/mydb', {
     useUnifiedTopology: true,
 }).then(con => {
     console.log('MongoDB Database connected with HOST ');
-    app.listen(8080)
 })
 .catch((err) => {
         console.log(err);
     });
 }
 connectDatabase();
-
+app.listen(8080)
 
 
 
