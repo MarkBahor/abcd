@@ -56,7 +56,7 @@ const connectDatabase = () => {mongoose.connect('mongodb://mongo:27017/mydb', {
     });
 }
 connectDatabase();
-app.listen(8080)
+app.listen(80)
 
 
 
